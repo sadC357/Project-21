@@ -6,7 +6,7 @@ function setup() {
   speed=random(223,321);
   weight=random(30,52);
   thickness=random(22,83);
-  bullet=createSprite(50,50,50,50);
+  bullet=createSprite(50,200,50,10);
   wall=createSprite(1200,200,thickness,height/2);
   wall.shapeColor=color(80,80,80);
   bullet.velocityX=speed;
@@ -20,7 +20,7 @@ function draw() {
     if (damage>10) {
       wall.shapeColor="red";
     }
-    if (damaga<10) {
+    if (damage<10) {
       wall.shapeColor="green";
     }
   }
